@@ -303,73 +303,91 @@
           <h2>Parlamentares</h2>
           <p>Conheça quem representa você e acompanhe suas iniciativas.</p>
         </div>
-        <div class="parlamentares__grid">
-          <article>
-            <img
-              class="avatar"
-              src="https://www.transparencia.cabofrio.rj.leg.br/imagens/644.jpg"
-              alt="Foto da parlamentar Ana Ibirapuera."
-            />
-            <div>
-              <h4>Ana Ibirapuera</h4>
-              <span>Presidente</span>
-            </div>
-          </article>
-          <article>
-            <img
-              class="avatar"
-              src="https://www.transparencia.cabofrio.rj.leg.br/imagens/595.jpg"
-              alt="Foto do parlamentar Lucas Souza."
-            />
-            <div>
-              <h4>Lucas Souza</h4>
-              <span>Vice-presidente</span>
-            </div>
-          </article>
-          <article>
-            <img
-              class="avatar"
-              src="https://www.transparencia.cabofrio.rj.leg.br/imagens/647.jpg"
-              alt="Foto da parlamentar Cláudia Matos."
-            />
-            <div>
-              <h4>Cláudio Matos</h4>
-              <span>Relator</span>
-            </div>
-          </article>
-          <article>
-            <img
-              class="avatar"
-              src="https://www.transparencia.cabofrio.rj.leg.br/imagens/630.jpg"
-              alt="Foto do parlamentar Rafael Andrade."
-            />
-            <div>
-              <h4>Rafael Andrade</h4>
-              <span>Líder da bancada</span>
-            </div>
-          </article>
-          <article>
-            <img
-              class="avatar"
-              src="https://www.transparencia.cabofrio.rj.leg.br/imagens/501.jpg"
-              alt="Foto do parlamentar Diego Silva."
-            />
-            <div>
-              <h4>Diego Silva</h4>
-              <span>Ouvidor</span>
-            </div>
-          </article>
-          <article>
-            <img
-              class="avatar"
-              src="https://www.transparencia.cabofrio.rj.leg.br/imagens/642.jpg"
-              alt="Foto da parlamentar Renata Almeida."
-            />
-            <div>
-              <h4>Renata Almeida</h4>
-              <span>Corregedoria</span>
-            </div>
-          </article>
+        <div class="parlamentares__carousel" aria-label="Carrossel de parlamentares">
+          <button
+            class="carousel__button"
+            type="button"
+            data-direction="prev"
+            aria-label="Ver parlamentares anteriores"
+          >
+            ‹
+          </button>
+          <div class="parlamentares__track" data-carousel>
+            <article class="parlamentares__card">
+              <img
+                class="parlamentares__photo"
+                src="https://www.transparencia.cabofrio.rj.leg.br/imagens/644.jpg"
+                alt="Foto da parlamentar Ana Ibirapuera."
+              />
+              <div class="parlamentares__info">
+                <h4>Ana Ibirapuera</h4>
+                <span>Presidente</span>
+              </div>
+            </article>
+            <article class="parlamentares__card">
+              <img
+                class="parlamentares__photo"
+                src="https://www.transparencia.cabofrio.rj.leg.br/imagens/595.jpg"
+                alt="Foto do parlamentar Lucas Souza."
+              />
+              <div class="parlamentares__info">
+                <h4>Lucas Souza</h4>
+                <span>Vice-presidente</span>
+              </div>
+            </article>
+            <article class="parlamentares__card">
+              <img
+                class="parlamentares__photo"
+                src="https://www.transparencia.cabofrio.rj.leg.br/imagens/647.jpg"
+                alt="Foto da parlamentar Cláudia Matos."
+              />
+              <div class="parlamentares__info">
+                <h4>Cláudio Matos</h4>
+                <span>Relator</span>
+              </div>
+            </article>
+            <article class="parlamentares__card">
+              <img
+                class="parlamentares__photo"
+                src="https://www.transparencia.cabofrio.rj.leg.br/imagens/630.jpg"
+                alt="Foto do parlamentar Rafael Andrade."
+              />
+              <div class="parlamentares__info">
+                <h4>Rafael Andrade</h4>
+                <span>Líder da bancada</span>
+              </div>
+            </article>
+            <article class="parlamentares__card">
+              <img
+                class="parlamentares__photo"
+                src="https://www.transparencia.cabofrio.rj.leg.br/imagens/501.jpg"
+                alt="Foto do parlamentar Diego Silva."
+              />
+              <div class="parlamentares__info">
+                <h4>Diego Silva</h4>
+                <span>Ouvidor</span>
+              </div>
+            </article>
+            <article class="parlamentares__card">
+              <img
+                class="parlamentares__photo"
+                src="https://www.transparencia.cabofrio.rj.leg.br/imagens/642.jpg"
+                alt="Foto da parlamentar Renata Almeida."
+              />
+              <div class="parlamentares__info">
+                <h4>Renata Almeida</h4>
+                <span>Corregedoria</span>
+              </div>
+            </article>
+          </div>
+          <button
+            class="carousel__button"
+            type="button"
+            data-direction="next"
+            aria-label="Ver próximos parlamentares"
+          >
+            ›
+          </button>
         </div>
         <button class="outline centered">Acessar perfil completo</button>
       </section>
