@@ -592,6 +592,7 @@ button {
   color: #fff;
   padding: 18px 16px 20px;
   text-align: center;
+  min-height: 120px;
 }
 
 .parlamentares__info h4 {
