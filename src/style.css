@@ -1,5 +1,5 @@
 :root {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   color: #0f1c2f;
   background-color: #f3f7ff;
   line-height: 1.6;
@@ -23,7 +23,12 @@
 
 body {
   min-height: 100vh;
-  background: radial-gradient(circle at 20% 10%, #eef6ff 0%, #f3f7ff 40%, #f9fbff 100%);
+  background: radial-gradient(
+    circle at 20% 10%,
+    #eef6ff 0%,
+    #f3f7ff 40%,
+    #f9fbff 100%
+  );
 }
 
 a {
@@ -44,7 +49,12 @@ button {
 }
 
 .hero {
-  background: radial-gradient(circle at top right, #e3f1ff 0%, #ffffff 45%, #f4f7ff 100%);
+  background: radial-gradient(
+    circle at top right,
+    #e3f1ff 0%,
+    #ffffff 45%,
+    #f4f7ff 100%
+  );
   padding-bottom: 80px;
   position: relative;
   overflow: hidden;
@@ -56,11 +66,22 @@ button {
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(150deg, rgba(6, 24, 45, 0.9) 8%, rgba(9, 54, 110, 0.75) 45%, rgba(20, 184, 196, 0.45) 72%, rgba(247, 195, 49, 0.28) 100%),
-    radial-gradient(circle at 20% 25%, rgba(15, 76, 129, 0.45), rgba(15, 76, 129, 0) 55%),
+  background:
+    linear-gradient(
+      150deg,
+      rgba(6, 24, 45, 0.9) 8%,
+      rgba(9, 54, 110, 0.75) 45%,
+      rgba(20, 184, 196, 0.45) 72%,
+      rgba(247, 195, 49, 0.28) 100%
+    ),
+    radial-gradient(
+      circle at 20% 25%,
+      rgba(15, 76, 129, 0.45),
+      rgba(15, 76, 129, 0) 55%
+    ),
     url("https://cabofrio.rj.leg.br/wp-content/uploads/2023/08/1-17.png")
       center/cover no-repeat fixed;
   opacity: 0.92;
@@ -69,12 +90,16 @@ button {
 }
 
 .hero::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 420px;
   height: 420px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(20, 184, 196, 0.22), rgba(15, 76, 129, 0));
+  background: radial-gradient(
+    circle,
+    rgba(20, 184, 196, 0.22),
+    rgba(15, 76, 129, 0)
+  );
   top: -120px;
   right: -140px;
   filter: blur(6px);
@@ -90,14 +115,22 @@ button {
   font-size: 0.85rem;
   color: #1e3e6a;
   border-bottom: 1px solid rgba(15, 28, 47, 0.08);
-  background: linear-gradient(90deg, rgba(15, 76, 129, 0.08), rgba(255, 255, 255, 0.95));
+  background: linear-gradient(
+    90deg,
+    rgba(15, 76, 129, 0.08),
+    rgba(255, 255, 255, 0.95)
+  );
   backdrop-filter: blur(6px);
 }
 
 .hero .topbar {
   color: #e7f1ff;
   border-bottom-color: rgba(255, 255, 255, 0.18);
-  background: linear-gradient(90deg, rgba(7, 29, 52, 0.7), rgba(7, 29, 52, 0.2));
+  background: linear-gradient(
+    90deg,
+    rgba(7, 29, 52, 0.7),
+    rgba(7, 29, 52, 0.2)
+  );
 }
 
 .topbar__left {
@@ -166,6 +199,7 @@ button {
 .brand__title {
   font-weight: 700;
   font-size: 1.05rem;
+  color: #ffffff;
 }
 
 .brand__subtitle {
@@ -208,7 +242,7 @@ button {
 }
 
 .hero__text h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: clamp(2.2rem, 3vw, 3.2rem);
   margin: 12px 0 20px;
 }
@@ -347,7 +381,11 @@ button {
 }
 
 .quick-services {
-  background: linear-gradient(180deg, rgba(231, 241, 255, 0.7), rgba(255, 243, 207, 0.35));
+  background: linear-gradient(
+    180deg,
+    rgba(231, 241, 255, 0.7),
+    rgba(255, 243, 207, 0.35)
+  );
   padding-top: 40px;
   border-radius: 32px;
 }
@@ -366,7 +404,9 @@ button {
   display: grid;
   gap: 8px;
   border: 1px solid rgba(31, 122, 217, 0.12);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .service-grid span {
@@ -451,7 +491,8 @@ button {
 }
 
 .live__content {
-  background: linear-gradient(120deg, rgba(9, 54, 110, 0.92), rgba(20, 184, 196, 0.72)),
+  background:
+    linear-gradient(120deg, rgba(9, 54, 110, 0.92), rgba(20, 184, 196, 0.72)),
     url("https://cabofrio.rj.leg.br/wp-content/uploads/2025/10/Fachada-Camara-de-Cabo-Frio-horizontal.jpg")
       center/cover no-repeat;
   border-radius: 24px;
