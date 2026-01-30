@@ -596,6 +596,12 @@ button {
   gap: 16px;
 }
 
+.footer__logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
 .footer__links {
   display: flex;
   gap: 16px;
