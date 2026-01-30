@@ -545,33 +545,91 @@ button {
   display: block;
 }
 
-.parlamentares__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
+.parlamentares__carousel {
+  position: relative;
 }
 
-.parlamentares__grid article {
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 18px;
+.parlamentares__track {
   display: flex;
-  gap: 16px;
-  align-items: center;
-  box-shadow: 0 14px 26px rgba(15, 28, 47, 0.1);
-  border: 1px solid rgba(31, 122, 217, 0.08);
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 8px 56px 24px;
+  scroll-behavior: smooth;
 }
 
-.avatar {
-  width: 56px;
-  height: 56px;
-  border-radius: 16px;
-  background: linear-gradient(135deg, var(--sun), #ffda60);
+.parlamentares__track::-webkit-scrollbar {
+  display: none;
+}
+
+.parlamentares__card {
+  flex: 0 0 240px;
+  scroll-snap-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 18px 32px rgba(15, 28, 47, 0.18);
+  border: 1px solid rgba(31, 122, 217, 0.12);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.parlamentares__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 36px rgba(15, 28, 47, 0.2);
+}
+
+.parlamentares__photo {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.parlamentares__info {
+  background: linear-gradient(135deg, var(--blue-strong), var(--blue));
+  color: #fff;
+  padding: 18px 16px 20px;
+  text-align: center;
+}
+
+.parlamentares__info h4 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.parlamentares__info span {
+  font-size: 0.8rem;
+  opacity: 0.85;
+  letter-spacing: 0.08em;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: var(--blue);
   display: grid;
   place-items: center;
-  font-weight: 700;
-  object-fit: cover;
-  border: 2px solid rgba(15, 76, 129, 0.15);
+  font-size: 1.6rem;
+  box-shadow: 0 12px 24px rgba(15, 28, 47, 0.18);
+  border: 1px solid rgba(31, 122, 217, 0.16);
+  z-index: 2;
+}
+
+.carousel__button[data-direction="prev"] {
+  left: 8px;
+}
+
+.carousel__button[data-direction="next"] {
+  right: 8px;
 }
 
 .services__grid {
@@ -876,5 +934,20 @@ button {
   .transparency__actions {
     width: 100%;
     flex-direction: column;
+  }
+
+  .parlamentares__track {
+    padding: 8px 24px 20px;
+    gap: 16px;
+  }
+
+  .parlamentares__card {
+    flex-basis: 200px;
+  }
+
+  .carousel__button {
+    width: 36px;
+    height: 36px;
+    font-size: 1.3rem;
   }
 }
