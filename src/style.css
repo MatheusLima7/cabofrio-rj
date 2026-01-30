@@ -813,6 +813,31 @@ button {
   gap: 8px;
 }
 
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: rgba(31, 122, 217, 0.12);
+  color: var(--blue-strong);
+  box-shadow: inset 0 0 0 1px rgba(31, 122, 217, 0.15);
+  flex: 0 0 36px;
+}
+
+.social-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
 .footer {
   background: linear-gradient(120deg, #071d34, #0b2f55);
   color: #d0ddf0;
