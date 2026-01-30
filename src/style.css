@@ -368,6 +368,10 @@ button {
   margin-bottom: 8px;
 }
 
+.services .section-header h2 {
+  white-space: nowrap;
+}
+
 .section-header p {
   color: var(--text-soft);
 }
