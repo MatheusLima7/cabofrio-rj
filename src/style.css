@@ -361,35 +361,37 @@ button {
 }
 
 .live__content {
-  background: #fdf3d5;
+  background: linear-gradient(120deg, rgba(9, 54, 110, 0.92), rgba(18, 105, 190, 0.78)),
+    url("https://cabofrio.rj.leg.br/wp-content/uploads/2025/10/Fachada-Camara-de-Cabo-Frio-horizontal.jpg")
+      center/cover no-repeat;
   border-radius: 24px;
   padding: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 32px;
   align-items: center;
+  color: #f5f8ff;
 }
 
-.live__mock,
+.live__video,
 .media__player {
-  background: #ffffff;
+  background: rgba(8, 24, 48, 0.88);
   border-radius: 20px;
   min-height: 220px;
   display: grid;
   place-items: center;
   gap: 12px;
-  box-shadow: inset 0 0 0 1px #f2e1a4;
+  box-shadow: 0 16px 32px rgba(4, 20, 44, 0.35);
+  overflow: hidden;
 }
 
-.play {
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  background: #0f4c81;
-  color: #fff;
-  display: grid;
-  place-items: center;
-  font-weight: 700;
+.live__video iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  border: 0;
+  aspect-ratio: 16 / 9;
+  display: block;
 }
 
 .parlamentares__grid {
