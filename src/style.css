@@ -59,12 +59,13 @@ button {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(160deg, rgba(7, 29, 52, 0.8) 5%, rgba(15, 76, 129, 0.55) 45%, rgba(20, 184, 196, 0.35) 70%, rgba(255, 243, 207, 0.2) 100%),
-    url("https://cabofrio.rj.leg.br/wp-content/uploads/2025/10/Fachada-Camara-de-Cabo-Frio-horizontal.jpg")
+  background: linear-gradient(150deg, rgba(6, 24, 45, 0.9) 8%, rgba(9, 54, 110, 0.75) 45%, rgba(20, 184, 196, 0.45) 72%, rgba(247, 195, 49, 0.28) 100%),
+    radial-gradient(circle at 20% 25%, rgba(15, 76, 129, 0.45), rgba(15, 76, 129, 0) 55%),
+    url("https://cabofrio.rj.leg.br/wp-content/uploads/2023/08/1-17.png")
       center/cover no-repeat fixed;
-  opacity: 0.85;
+  opacity: 0.92;
   z-index: 0;
-  filter: saturate(1.05);
+  filter: saturate(1.05) brightness(0.75) contrast(1.05);
 }
 
 .hero::after {
